@@ -32,8 +32,10 @@ namespace Calculadora
                 label1.Text = boton.Text;
             }
 
-            label1.Text = label1.Text + boton.Text;
-
+            else
+            {
+                label1.Text = label1.Text + boton.Text;
+            }
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -42,7 +44,6 @@ namespace Calculadora
             operacion = boton.Text;
             operando1 = Convert.ToDouble(label1.Text);
             label1.Text = "0";
-
         }
     }
 }
