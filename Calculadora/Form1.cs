@@ -42,6 +42,7 @@ namespace Calculadora
             operacion = boton.Text;
             operando1 = Convert.ToDouble(label1.Text);
             label1.Text = "0";
+
         }
     }
 }
