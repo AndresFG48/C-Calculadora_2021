@@ -60,7 +60,41 @@ namespace Calculadora
                 resultado = operando1 - operando2; 
             }
 
+            else if (operacion == "*")
+            {
+                resultado = operando1 * operando2;
+            }
+
+            else if (operacion == "/" && operando2 != 0)
+            {
+                resultado = operando1 / operando2;
+            }
+
             label1.Text = Convert.ToString(resultado);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Button boton = (Button)sender;
+            operacion = boton.Text;
+            operando1 = Convert.ToDouble(label1.Text);
+            label1.Text = "0";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Button boton = (Button)sender;
+            operacion = boton.Text;
+            operando1 = Convert.ToDouble(label1.Text);
+            label1.Text = "0";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Button boton = (Button)sender;
+            operacion = boton.Text;
+            operando1 = Convert.ToDouble(label1.Text);
+            label1.Text = "0";
         }
     }
 }
