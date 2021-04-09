@@ -45,5 +45,22 @@ namespace Calculadora
             operando1 = Convert.ToDouble(label1.Text);
             label1.Text = "0";
         }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            double operando2 = Convert.ToDouble(label1.Text);
+            double resultado = 0;
+            if (operacion == "+")
+            {
+                resultado = operando1 + operando2;
+            }
+
+            else if (operacion == "-")
+            {
+                resultado = operando1 - operando2; 
+            }
+
+            label1.Text = Convert.ToString(resultado);
+        }
     }
 }
